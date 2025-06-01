@@ -6,71 +6,90 @@
   <title>Kirby's Expert Tree Service</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <!-- Header -->
-  <header class="text-center py-8">
-    <h1 class="text-4xl font-bold">Expert <span class="text-green-600">Tree Services</span><br>in <span class="text-green-600">Flagler County</span></h1>
-  </header>
+<body class="bg-white text-black font-sans">
 
-  <!-- Hero Section -->
-  <section class="text-center px-4 md:px-0 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-2">Welcome to Kirby's Expert Tree Service</h2>
-    <p class="mb-6 text-lg">We are a full-service tree & landscaping company that has been providing prompt, high-quality services for over 20 years.</p>
-    
-    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-      <p class="mb-4">Kirby’s Expert Tree Service is the number one tree service company in Flagler County.</p>
-      <p class="mb-4">We have proven over the years that we have the right expertise and skills to handle all your needs. One of the things that make us a leading tree service is that everyone on our team has the expertise needed to get the job done. The rich expertise that flows through each of our service engagements is unparalleled.</p>
-      <button class="bg-gray-300 text-black px-6 py-2 rounded hover:bg-gray-400">Request Free Quote</button>
+    <header>
+        <nav class="h-[15vh] flex items-center justify-between flex-wrap bg-green-900 p-6 z-10">
+            <div class="flex items-center flex-no-shrink text-white mr-6">
+                <!-- Logo or Title can go here -->
+            </div>
+            <div class="block lg:hidden">
+                <button
+                    class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-darkest hover:bg-white"
+                    onclick="myFunction()">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full hidden lg:block lg:flex lg:items-center lg:w-auto" id="nav">
+                <div class="text-sm lg:flex-grow">
+                    <a href="index.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-gray-200 hover:underline">
+                        Home
+                    </a>
+                    <a href="services.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-gray-200 hover:underline">
+                        Services
+                    </a>
+                    <a href="contact.html"
+                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white text-lg text-gray-200 hover:underline">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Full-screen Hero Section -->
+  <section class="h-screen bg-[#f9f6ef] flex flex-col">
+    <div class="flex flex-1">
+      <!-- Left: Headline -->
+      <div class="flex items-center justify-center flex-1 px-16">
+        <div>
+          <h1 class="text-4xl font-bold mb-2">Expert Tree Services & Landscaping</h1>
+          <h2 class="text-3xl font-bold">in </h2>
+        </div>
+      </div>
+      
+      <!-- Right: Image Placeholder -->
+      <div class="flex-1 flex items-center justify-center px-8">
+        <div class="min-w-[40vw] min-h-[50vh] bg-gray-300"></div>
+      </div>
+    </div>
+
+    <!-- Welcome Text -->
+    <div class="bg-gray-200 text-center py-6 min-h-[30vh] flex flex-col justify-center items-center">
+      <h3 class="text-3xl font-bold mb-2">Welcome to Kirby’s Expert Tree Service</h3>
+      <p class="text-lg font-semibold">
+        We are a full-service tree & landscaping company that has been providing prompt,<br />
+        high-quality tree services for over 20 years.
+      </p>
     </div>
   </section>
 
-  <!-- Why Choose Us Section -->
-  <section class="mt-12 px-4 md:px-0 max-w-4xl mx-auto">
-    <h3 class="text-xl font-semibold mb-4">Why Choose Kirby’s Expert Tree Service?</h3>
-    <ul class="space-y-4 list-disc list-inside">
-      <li>
-        <strong>Licensed & Insured</strong><br>
-        Kirby’s Expert Tree Service is fully licensed and insured to operate in Flagler County and surrounding areas. We follow all local and state regulations to ensure safe, professional, and code-compliant service on every job.
-      </li>
-      <li>
-        <strong>Trusted & Recommended</strong><br>
-        As a top-rated tree service provider in Flagler County, we’ve earned the trust of homeowners, property managers, and businesses across the region. Our clients count on us for prompt response times, expert care, and reliable results.
-      </li>
-      <li>
-        <strong>Strong Local Reputation</strong><br>
-        With years of hands-on experience and hundreds of satisfied customers, Kirby’s Expert Tree Service has built a solid reputation for quality workmanship, honest pricing, and exceptional customer care in the local community.
-      </li>
-      <li>
-        <strong>Complete Tree & Landscape Solutions</strong><br>
-        From tree trimming, removal, and stump grinding to emergency storm cleanup and routine landscape maintenance, we offer a full range of services to keep your outdoor spaces healthy, beautiful, and safe year-round.
-      </li>
-    </ul>
-  </section>
+  <section class="h-screen bg-[#f9f6ef] flex flex-col items-center justify-center text-center">
+    <div class="max-w-4xl">
+      <p class="text-2xl font-bold mb-12">
+        Kirby’s Expert Tree Service is the number one tree service company in Flagler County.
+      </p>
+      <p class="text-lg font-bold mb-12">
+        We have proven over the years that we have the right expertise and skills to handle all
+        your needs. One of the things that make us a leading tree service is that everyone on
+        our team has the expertise needed to get the job done. The rich expertise that flows
+        through each of our service engagements is unparalleled.
+      </p>
 
-  <!-- Contact Section -->
-  <section class="mt-16 bg-gray-100 py-8">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
-      <ul class="space-y-2">
-        <li><strong>Email:</strong> info@kirbystreeservice.com</li>
-        <li><strong>Phone:</strong> (386) 555-1234</li>
-        <li><strong>Address:</strong> Flagler County, FL</li>
-        <li><strong>Leave A Review:</strong> <a href="#" class="text-green-600 underline">Click here</a></li>
-      </ul>
+      <!-- Button -->
+      <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-6 rounded-full mb-12 transition">
+        Request Free Quote
+      </button>
+
+      <!-- Image Placeholder -->
+      <div class="w-full min-h-[200px] bg-gray-300"></div>
     </div>
   </section>
 
-  <!-- Footer Note -->
-  <footer class="bg-white text-sm text-gray-600 py-6 px-4 max-w-4xl mx-auto">
-    <p>
-      When it comes to expert tree care and fast response in Flagler County, no other company matches our commitment to quality, safety, and customer satisfaction. If you need urgent tree removal, storm cleanup, or professional tree maintenance, call Kirby’s Expert Tree Service today at (386) 555-1234.
-    </p>
-    <p class="mt-4">
-      Our experienced team is always ready to handle your needs—no matter the size or complexity of the job. With the right equipment and manpower, we're trusted by homeowners and businesses alike throughout Palm Coast, Bunnell, Flagler Beach, and surrounding areas.
-    </p>
-    <p class="mt-4">
-      Kirby’s Expert Tree Service is a fully licensed and insured company providing complete tree trimming, removal, stump grinding, and emergency services 7 days a week, 365 days a year. Whether it’s a downed tree after a storm, dangerous limbs threatening your home, or routine landscape care—our crew is standing by to help.
-    </p>
-  </footer>
 </body>
 </html>
