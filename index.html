@@ -120,6 +120,7 @@
         }
 
         .details-image img {
+            max-height: 50vh;
             max-width: 100%;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -130,13 +131,13 @@
                 display: none;
             }
 
-            #intro1 {
+            #services {
                 padding: 50px 20px;
             }
         }
 
         @media (max-width: 800px) {
-            #intro1 {
+            #services {
                 padding: 50px 10px;
             }
 
@@ -182,7 +183,7 @@
                     class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-gray-200 hover:underline">
                     Services
                 </a>
-                <a href="contact.html"
+                <a href="#contact"
                     class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white text-lg text-gray-200 hover:underline">
                     Contact
                 </a>
@@ -233,7 +234,7 @@
         </div>
       </section>      
 
-      <section id="intro1">
+      <section id="services">
         <h1 class="scroll-reveal font-bold pt-20 pb-10 flex items-center justify-center text-4xl">Our Services</h1>
         <div class="services-container scroll-reveal grid gap-4 px-8">
             <div class="grid grid-cols-3 lg:grid-cols-6 gap-4">
@@ -266,14 +267,15 @@
         </div>
     </section>
 
-    <section>
-        <div class="flex bg-gray-50 p-8">
+    <section id="contact">
+        <div class="flex bg-gray-50 py-8 px-24 justify-center items-center">
             <!-- Left Column -->
             <div class="w-1/2">
               <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
-              <ul class="space-y-8 text-lg">
+              <ul class="space-y-4 text-lg">
                 <li><strong>Email:</strong> kimkirbytree@gmail.com</li>
                 <li><strong>Phone:</strong> (386) 672-2493</li>
+                <li><strong>Google:</strong> https://g.co/kgs/rJJqNnx</li>
               </ul>
             </div>
         
@@ -295,24 +297,31 @@
                 <div class="footer-section-1">
                     <div class="footer-logo mb-6 w-80">
                         <a href="index.html">
-                            <img src="" alt="" class="w-80">
+                            <img src="kirby-logo-horizontal-white.png" alt="" class="w-80">
                         </a>
                     </div>
                 </div>
                 <div id="quick-links" class="text-white hidden xl:block mx-auto">
-                    <h3 class="text-xl font-semibold mb-4 text-grey-200">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-white">Home</a></li>
-                        <li><a href="services.html" class="hover:text-white">Services</a></li>
-                        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
-                    </ul>
+                    <h3 class="text-xl font-semibold mb-4 text-grey-200">Service Areas</h3>
+                    <div class="flex gap-16">
+                      <ul class="space-y-2">
+                        <li><a href="" class="hover:text-white">Flagler Beach</a></li>
+                        <li><a href="" class="hover:text-white">Palm Coast</a></li>
+                        <li><a href="" class="hover:text-white">Bunnell</a></li>
+                      </ul>
+                      <ul class="space-y-2">
+                        <li><a href="" class="hover:text-white">Beverly Beach</a></li>
+                        <li><a href="" class="hover:text-white">Ormond Beach</a></li>
+                        <li><a href="" class="hover:text-white">Marineland</a></li>
+                      </ul>
+                    </div>
                 </div>
                 <div id="footer-contact" class="text-white mx-auto">
                     <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
                     <div class="flex items-start mb-4">
                         <img src="location-white.png" alt="Location Icon" class="w-6 h-6 mr-4">
                         <div>
-                            <p>Flagler Beach & Beyond</p>
+                            <p>kimkirbytree@gmail.com</p>
                         </div>
                     </div>
                     <div class="flex items-start">
@@ -348,7 +357,7 @@
                   "Regular tree maintenance is essential for the health and longevity of your trees. Our team provides expert care to prevent disease, improve structure, and enhance appearance. We assess each tree individually to ensure proper treatment and care. We want to help your trees thrive year-round.",
                 "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
                 ],
-                  image: "service-img-1.png"
+                  image: "maintenance.jpg"
               },
               {
                   title: "Firewood",
@@ -364,7 +373,7 @@
                 "Proper pruning and trimming improve both the safety and appearance of your trees. We remove dead, damaged, or overgrown branches to promote healthy growth. This service also helps prevent property damage caused by falling limbs or overhanging branches. Our trained professionals follow industry best practices for every cut.",
                 "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
                 ],
-                  image: "service-img-3.png"
+                  image: "pruning.jpg"
               },
               {
                   title: "Tree Planting",
@@ -380,7 +389,7 @@
                 "Leftover stumps can be unsightly, hazardous, and attract pests. Our stump grinding and removal services clear your land quickly and efficiently. We use top-grade equipment to grind stumps below surface level, allowing for smooth replanting or lawn restoration. Reclaim your outdoor space with ease.",
                 "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
                   ],
-                  image: "service-img-5.png"
+                  image: "stump.jpg"
               },
               {
                   title: "Free Estimates",
@@ -388,7 +397,7 @@
                 "We believe in transparency and customer-first service, starting with a no-obligation estimate. Our team will visit your property to assess the job and provide a detailed quote. We explain everything clearly so you know exactly what to expect.",
                 "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
                 ],
-                  image: "service-img-6.png"
+                  image: "free.jpg"
               }
           ];
   
