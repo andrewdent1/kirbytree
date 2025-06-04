@@ -9,14 +9,12 @@
     <link rel="icon" type="image/png" href="kirby-icon-trans.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sawarabi+Mincho&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         .active {
@@ -75,7 +73,9 @@
 
         .details-container {
             padding: 50px;
-            margin: 2.5vw;
+            margin-left: 2.5vw;
+            margin-top: 2.5vw;
+            margin-right: 2.5vw;
             background-color: white;
             border: 1px solid #ccc;
             border-radius: 10px;
@@ -147,8 +147,22 @@
 
             .details-container {
                 padding: 50px 25px;
+                margin-left: 1vw;
+                margin-top: 2vw;
+                margin-right: 1vw;
             }
         }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.9s ease-out, transform 0.6s ease-out;
+            }
+
+            .scroll-reveal.active {
+            opacity: 1 !important;
+            transform: none;
+            }
     </style>
 </head>
 <body>
@@ -199,50 +213,54 @@
         </div>
       
         <div class="relative z-10 px-4 sm:px-10 md:px-20 flex flex-col items-center justify-center text-white">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-10">Expert Tree Services & Landscaping</h1>
-          <button onclick="window.location.href='contact.html'"
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Expert Tree Services & Landscaping</h1>
+          <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-10">serving Flagler & Volusia Counties since 1978</h2>
+          <button onclick="window.location.href='#contact'"
             class="bg-green-700 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-800 transition w-48">
             Get In Touch
           </button>
         </div>
       </section>
 
-      <section class="bg-gray-50 p-6 h-[100vh] flex items-center justify-center" id="about">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+      <section id="about" class="bg-white px-4 py-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 scroll-reveal">
+          
           <!-- Left Text Content -->
-          <div class="md:w-2/3 text-gray-900 space-y-6">
-            <p class="font-bold md:text-2xl lg:text-3xl text-4xl">
-              Welcome to Kirby's Expert Tree Service
-            </p>     
+          <div class="md:w-2/3 text-gray-900 space-y-6 p-4">
+            <h2 class="text-3xl font-bold">Welcome to Kirby's Expert Tree Service</h2>
             <p>
               For over four decades, Kirby's Expert Tree Service has proudly provided professional tree care and landscaping services to homeowners and businesses in Flagler Beach and the surrounding areas. Founded in 1978, our company has deep roots in the community and a long-standing reputation for quality, safety, and reliability.
-              <p>
-                Our founder, Kim Kirby, built this business on hard work and a passion for enhancing natural spaces. Today, Kim co-owns and operates with his wife, Diana, continuing the legacy of professional service and expert care.
-              </p>  
-              <p>
-                If you're looking to plant new saplings, remove dangerous tree limbs, or clear out old stumps, our team brings decades of hands-on experience and a deep understanding of Florida’s unique landscape. We specialize in everything from tree trimming and pruning to complete tree removal, always with a focus on safety, environmental responsibility, and your property's long-term health.</p>              
-              <p>
-              Talk with Kirby's Expert Tree Service to discuss your vision,
-              and how our services can make your beautiful ideas a reality.
+            </p>
+      
+            <p>
+              Our founder, Kim Kirby, built this business on hard work and a passion for enhancing natural spaces. Today, Kim co-owns and operates the company with his wife, Diana, continuing the legacy of professional service and expert care.
+            </p>
+      
+            <p>
+              Whether you're planting saplings, removing hazardous limbs, or clearing old stumps, our team brings decades of hands-on experience and a deep understanding of Florida’s unique landscape. We specialize in tree trimming, pruning, and complete removals—always with a focus on safety, environmental responsibility, and the long-term health of your property.
+            </p>
+      
+            <p>
+              Contact Kirby's Expert Tree Service today to share your vision and discover how we can bring your outdoor space to life.
             </p>
           </div>
-      
-          <!-- Right Image Content -->
-          <div class="md:w-1/2 flex justify-center items-center">
-            <img src="IMG_6186.jpg" alt="Tree Service" class="w-full max-w-sm rounded-xl object-cover shadow-lg" />
+          <div class="md:w-1/2 flex justify-center">
+            <img src="IMG_6186.jpg" alt="Kirby's Expert Tree Service crew at work" class="w-full max-w-sm rounded-xl object-cover shadow-lg" loading="lazy" />
           </div>
+          
         </div>
-      </section>      
+      </section>
+          
 
-      <section id="services">
-        <h1 class="scroll-reveal font-bold pt-20 pb-10 flex items-center justify-center text-4xl">Our Services</h1>
-        <div class="services-container scroll-reveal grid gap-4 px-8">
+      <section id="services" class="bg-gray-100 py-20">
+        <h1 class="scroll-reveal font-bold py-10 flex items-center justify-center text-4xl">Our Services</h1>
+        <div class="services-container scroll-reveal grid gap-4">
             <div class="grid grid-cols-3 lg:grid-cols-6 gap-4">
-                <div class="service-box" onclick="showDetails(0)">Tree Maintenance</div>
+                <div class="service-box" onclick="showDetails(0)">Tree & Palm Trimming</div>
                 <div class="service-box" onclick="showDetails(1)">Firewood</div>
-                <div class="service-box" onclick="showDetails(2)">Pruning & Trimming</div>
-                <div class="service-box" onclick="showDetails(3)">Tree Planting</div>
-                <div class="service-box" onclick="showDetails(4)">Stump Grinding & Removal</div>
+                <div class="service-box" onclick="showDetails(2)">Tree Removal</div>
+                <div class="service-box" onclick="showDetails(3)">Sawmill</div>
+                <div class="service-box" onclick="showDetails(4)">Stump Grinding</div>
                 <div class="service-box" onclick="showDetails(5)">Free Estimates</div>
               </div>
         </div>
@@ -267,30 +285,86 @@
         </div>
     </section>
 
-    <section id="contact">
-        <div class="flex bg-gray-50 py-8 px-24 justify-center items-center">
-            <!-- Left Column -->
-            <div class="w-1/2">
-              <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
-              <ul class="space-y-4 text-lg">
-                <li><strong>Email:</strong> kimkirbytree@gmail.com</li>
-                <li><strong>Phone:</strong> (386) 672-2493</li>
-                <li><strong>Google:</strong> https://g.co/kgs/rJJqNnx</li>
-              </ul>
+    <section class="relative bg-black/80 min-h-[80vh] flex flex-col justify-center items-center py-16 px-6 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-[url('/testimonial.jpg')] bg-cover bg-center opacity-20 z-0"></div>
+      
+        <!-- Content -->
+        <div class="relative z-10 max-w-6xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl text-white font-bold mb-12">Flagler County's Top Trusted Tree Service</h2>
+          <div class="grid gap-8 md:grid-cols-3">
+            
+            <!-- Review 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+              <div class="flex justify-center mb-4">
+                <span class="text-yellow-400 text-xl">★★★★★</span>
+              </div>
+              <p class="text-gray-800 italic">"This father son team is super impressive. They are fast and very knowledgeable about Florida’s landscape. They really are expert tree trimmers. They work in perfect tandem with one another and they’re cleanup is immaculate. This is the second time we have used their service and we highly recommend them for all your tree trimming needs. We have recommended them to all of our clients as well. They returned our call within minutes, scheduled us quickly and showed up on time. Thanks guys!!!"</p>
+              <p class="mt-4 font-semibold text-green-900">– Healani B.</p>
             </div>
-        
-            <!-- Right Column (Google Map) -->
-            <div class="w-1/2">
-              <iframe 
-                class="w-full h-72"
-                frameborder="0"
-                style="border:0"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55580.28004578573!2d-81.16791054404567!3d29.464798706224283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e694ccee43027d%3A0xa7329012323b3500!2sFlagler%20Beach%2C%20FL%2032136%2C%20USA!5e0!3m2!1sen!2sth!4v1748688997289!5m2!1sen!2sth">
-              </iframe>
+      
+            <!-- Review 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+              <div class="flex justify-center mb-4">
+                <span class="text-yellow-400 text-xl">★★★★★</span>
+              </div>
+              <p class="text-gray-800 italic">"Kim and his son Joseph showed up on time and ready to work with a smile. Really appreciated their great attitude towards the work that needed to be done. We were offered a fair price and they got to work trimming my Palmettos and Oak Trees over in Flagler Beach. Quality work done right the first time. Even took the time to clean up everything after they were done. Thanks Kim and Joseph."</p>
+              <p class="mt-4 font-semibold text-green-900">– Brian B.</p>
             </div>
+      
+            <!-- Review 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+              <div class="flex justify-center mb-4">
+                <span class="text-yellow-400 text-xl">★★★★★</span>
+              </div>
+              <p class="text-gray-800 italic">"Good local expert in tree service"</p>
+              <p class="mt-4 font-semibold text-green-900">– Ary Cave</p>
+            </div>
+      
           </div>
-    </section>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-gray-50 py-16 px-8">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start md:items-center gap-12">
+          
+          <!-- Contact Info -->
+          <div class="w-full md:w-1/2 space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold">Contact Us</h2>
+            <ul class="text-lg text-gray-800 space-y-3">
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:kimkirbytree@gmail.com" class="text-blue-600 hover:underline">kimkirbytree@gmail.com</a>
+              </li>
+              <li>
+                <strong>Phone:</strong>
+                <a href="tel:+13866722493" class="text-blue-600 hover:underline">(386) 672-2493</a>
+              </li>
+              <li class="flex gap-4 flex items-center">
+                <strong>Leave Us A Review!</strong>
+                <a href="https://g.co/kgs/rJJqNnx" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline"><img src="Google-Review-Logo.png" alt="" class="w-32">
+                </a>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Map -->
+          <div class="w-full md:w-1/2">
+            <iframe
+              class="w-full h-72 rounded-lg shadow-md"
+              title="Map of Flagler Beach, Florida"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55580.28004578573!2d-81.16791054404567!3d29.464798706224283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e694ccee43027d%3A0xa7329012323b3500!2sFlagler%20Beach%2C%20FL%2032136%2C%20USA!5e0!3m2!1sen!2sth!4v1748688997289!5m2!1sen!2sth"
+              frameborder="0"
+              style="border:0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+      
+        </div>
+      </section>      
+    
     <footer class="bg-green-900 text-white py-8 min-h-[20vh]">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between gap-8">
@@ -305,14 +379,14 @@
                     <h3 class="text-xl font-semibold mb-4 text-grey-200">Service Areas</h3>
                     <div class="flex gap-16">
                       <ul class="space-y-2">
-                        <li><a href="" class="hover:text-white">Flagler Beach</a></li>
-                        <li><a href="" class="hover:text-white">Palm Coast</a></li>
-                        <li><a href="" class="hover:text-white">Bunnell</a></li>
+                        <li><a href="" class="hover:underline">Flagler Beach</a></li>
+                        <li><a href="" class="hover:underline">Palm Coast</a></li>
+                        <li><a href="" class="hover:underline">Bunnell</a></li>
                       </ul>
                       <ul class="space-y-2">
-                        <li><a href="" class="hover:text-white">Beverly Beach</a></li>
-                        <li><a href="" class="hover:text-white">Ormond Beach</a></li>
-                        <li><a href="" class="hover:text-white">Marineland</a></li>
+                        <li><a href="" class="hover:underline">Beverly Beach</a></li>
+                        <li><a href="" class="hover:underline">Ormond Beach</a></li>
+                        <li><a href="" class="hover:underline">Marineland</a></li>
                       </ul>
                     </div>
                 </div>
@@ -352,7 +426,7 @@
         <script>
           const services = [
               {
-                  title: "Tree Maintenance",
+                  title: "Tree & Palm Trimming",
                   paragraphs: [
                   "Regular tree maintenance is essential for the health and longevity of your trees. Our team provides expert care to prevent disease, improve structure, and enhance appearance. We assess each tree individually to ensure proper treatment and care. We want to help your trees thrive year-round.",
                 "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
@@ -365,26 +439,26 @@
                 "We're here to supply seasoned, locally sourced firewood for heating, camping, or cozy nights by the fire. Our firewood is split, dried, and ready to burn clean and efficiently. We offer flexible quantities with convenient pickup or delivery options. Stock up today with quality firewood you can count on.",
                 "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
                   ],
-                  image: "service-img-2.png"
+                  image: "firewood.jpg"
               },
               {
-                  title: "Pruning & Trimming",
+                  title: "Tree Removal",
                   paragraphs: [
-                "Proper pruning and trimming improve both the safety and appearance of your trees. We remove dead, damaged, or overgrown branches to promote healthy growth. This service also helps prevent property damage caused by falling limbs or overhanging branches. Our trained professionals follow industry best practices for every cut.",
-                "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
+                  "Tree removal is sometimes necessary when a tree becomes unsafe, diseased, or poses a threat to your property. Our expert crew safely removes trees of all sizes using professional equipment and proven techniques. We minimize disruption to your landscape and handle cleanup so you don’t have to.",
+                  "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
                 ],
                   image: "pruning.jpg"
               },
               {
-                  title: "Tree Planting",
+                  title: "Sawmill",
                   paragraphs: [
-                "Tree planting is a long-term investment, which is why we help you choose the right species for your soil, space, and aesthetic. Our team handles every step, from planning and placement to digging and planting. Let us bring beauty and balance back to your yard.",
-                "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
+                  "Our portable sawmill service turns downed or removed trees into usable lumber. Whether you're a DIYer or contractor, we can custom-cut logs into boards for furniture, fencing, and more. It's a sustainable solution that gives new life to felled trees. Trust us to deliver precision cuts and quality results every time.",
+                  "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
                   ],
-                  image: "service-img-4.png"
+                  image: "sawmill.jpg"
               },
               {
-                  title: "Strump Grinding & Removal",
+                  title: "Strump Grinding",
                   paragraphs: [
                 "Leftover stumps can be unsightly, hazardous, and attract pests. Our stump grinding and removal services clear your land quickly and efficiently. We use top-grade equipment to grind stumps below surface level, allowing for smooth replanting or lawn restoration. Reclaim your outdoor space with ease.",
                 "We proudly serve residential and commercial clients throughout Flagler County, including Flagler Beach, Palm Coast, and Bunnell. Get in touch today and discover why we're the trusted name in tree services across Northeast Florida"
@@ -408,13 +482,6 @@
               const paragraph2 = document.getElementById('service-paragraph2');
               const paragraph3 = document.getElementById('service-paragraph3');
               const paragraph4 = document.getElementById('service-paragraph4');
-              const paragraph5 = document.getElementById('service-paragraph5');
-              const paragraph6 = document.getElementById('service-paragraph6');
-              const paragraph7 = document.getElementById('service-paragraph7');
-              const paragraph8 = document.getElementById('service-paragraph8');
-              const paragraph9 = document.getElementById('service-paragraph9');
-              const paragraph10 = document.getElementById('service-paragraph10');
-              const paragraph11 = document.getElementById('service-paragraph11');
               const image = document.getElementById('service-image');
   
               const service = services[index];
@@ -425,13 +492,6 @@
               paragraph2.textContent = service.paragraphs[1];
               paragraph3.textContent = service.paragraphs[2];
               paragraph4.textContent = service.paragraphs[3];
-              paragraph5.textContent = service.paragraphs[4];
-              paragraph6.textContent = service.paragraphs[5];
-              paragraph7.textContent = service.paragraphs[6];
-              paragraph8.textContent = service.paragraphs[7];
-              paragraph9.textContent = service.paragraphs[8];
-              paragraph10.textContent = service.paragraphs[9];
-              paragraph11.textContent = service.paragraphs[10];
               image.src = service.image;
   
               // Display details container
@@ -474,4 +534,23 @@
               revealOnScroll();
           });
       </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+              }
+            });
+          }, {
+            threshold: 0.1
+          });
+      
+          document.querySelectorAll('.scroll-reveal').forEach(el => {
+            el.classList.add('opacity-0', 'transition-opacity', 'duration-1000');
+            observer.observe(el);
+          });
+        });
+      </script>
+      
 </body>
