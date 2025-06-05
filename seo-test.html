@@ -8,59 +8,67 @@
 </head>
 <body class="bg-white text-black font-sans">
 
-    <header>
-        <nav class="h-[15vh] flex items-center justify-between flex-wrap bg-green-900 p-6 z-10">
-            <div class="flex items-center flex-no-shrink text-white mr-6">
-                <!-- Logo or Title can go here -->
-            </div>
-            <div class="block lg:hidden">
-                <button
-                    class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-darkest hover:bg-white"
-                    onclick="myFunction()">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-            <div class="w-full hidden lg:block lg:flex lg:items-center lg:w-auto" id="nav">
-                <div class="text-sm lg:flex-grow">
-                    <a href="index.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-gray-200 hover:underline">
-                        Home
-                    </a>
-                    <a href="services.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-gray-200 hover:underline">
-                        Services
-                    </a>
-                    <a href="contact.html"
-                        class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white text-lg text-gray-200 hover:underline">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-  <!-- Full-screen Hero Section -->
-  <section class="h-screen bg-[#f9f6ef] flex flex-col">
-    <div class="flex flex-1">
-      <!-- Left: Headline -->
-      <div class="flex items-center justify-center flex-1 px-16">
-        <div>
-          <h1 class="text-4xl font-bold mb-2">Expert Tree Services & Landscaping</h1>
-          <h2 class="text-3xl font-bold">in </h2>
+  <header>
+    <nav class="flex items-center justify-between flex-wrap bg-green-900 py-6 px-8 z-10">
+        <div class="flex items-center flex-no-shrink text-white mr-6">
+            <a href="index.html">
+                <img src="kirby-logo-horizontal-white.png" alt="" class="min-w-[250px] max-w-[20vw]">
+            </a>
         </div>
+        <div class="block lg:hidden">
+            <button
+                class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-darkest hover:bg-white"
+                onclick="myFunction()">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div class="w-full hidden lg:block lg:flex lg:items-center lg:w-auto" id="nav">
+            <div class="text-sm lg:flex-grow">
+                <a href="index.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-gray-200 hover:underline">
+                    Home
+                </a>
+                <a href="#about"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-gray-200 hover:underline">
+                    About
+                </a>
+                <a href="#services"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4 text-lg text-gray-200 hover:underline">
+                    Services
+                </a>
+                <a href="#contact"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white text-lg text-gray-200 hover:underline">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+</header> 
+  <section class="h-screen bg-[#f9f6ef] flex flex-col">
+    <section id="intro" class="flex flex-col items-center md:flex-row bg-gray-50 px-4 sm:px-10 md:px-20 min-h-[80vh]">
+      <div id="intro-right" class="w-3/5 md:w-3/5 flex flex-col justify-center items-center md:items-start md:pr-6">
+          <h1 class="mt-20 text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 md:mt-0 text-center md:text-left">Expert Tree Services & Landscaping</h1>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-10 md:mt-0 text-center md:text-left">in Flagler Beach</h2>
+          <button onclick="window.location.href='contact.html'"
+              class="bg-green-700 text-white px-6 py-2 rounded-lg shadow-md hover:bg-green-800 transition w-48">
+              Get In Touch
+          </button>
       </div>
-      
-      <!-- Right: Image Placeholder -->
-      <div class="flex-1 flex items-center justify-center px-8">
-        <div class="min-w-[40vw] min-h-[50vh] bg-gray-300"></div>
+      <div id="intro-left" class="w-full md:w-2/5 flex justify-center items-center relative">
+        <img 
+          src="IMG_3109 copy.jpg" 
+          alt="Kirby’s Expert Tree Service crew at work in Flagler Beach"
+          class="w-full max-w-xl rounded-lg shadow-lg object-cover"
+          loading="lazy"
+        />
       </div>
-    </div>
+  </section>
 
     <!-- Welcome Text -->
-    <div class="bg-gray-200 text-center py-6 min-h-[30vh] flex flex-col justify-center items-center">
+    <div class="bg-gray-200 text-center py-6 min-h-[50vh] flex flex-col justify-center items-center">
       <h3 class="text-3xl font-bold mb-2">Welcome to Kirby’s Expert Tree Service</h3>
       <p class="text-lg font-semibold">
         We are a full-service tree & landscaping company that has been providing prompt,<br />
@@ -100,35 +108,123 @@
       <div class="space-y-8 text-gray-800 text-lg leading-relaxed">
         <div>
           <h3 class="font-semibold text-xl">Licensed & Insured</h3>
-          <p>
-            - Kirby’s Expert Tree Service is fully licensed and insured to operate in Flagler County and surrounding areas. We follow all local and state regulations to ensure safe, professional, and code-compliant service on every job.
-          </p>
+          <li>
+          Kirby’s Expert Tree Service is fully licensed and insured to operate in Flagler County and surrounding areas. We follow all local and state regulations to ensure safe, professional, and code-compliant service on every job.
+          </li>
         </div>
   
         <div>
           <h3 class="font-semibold text-xl">Trusted & Recommended</h3>
-          <p>
-            - As a top-rated tree service provider in Flagler County, we’ve earned the trust of homeowners, property managers, and businesses across the region. Our clients count on us for prompt response times, expert care, and reliable results.
-          </p>
+          <li>
+          As a top-rated tree service provider in Flagler County, we’ve earned the trust of homeowners, property managers, and businesses across the region. Our clients count on us for prompt response times, expert care, and reliable results.
+          </li>
         </div>
   
         <div>
           <h3 class="font-semibold text-xl">Strong Local Reputation</h3>
-          <p>
-            - With years of hands-on experience and hundreds of satisfied customers, Kirby’s Expert Tree Service has built a solid reputation for quality workmanship, honest pricing, and exceptional customer care in the local community.
-          </p>
+          <li>
+          With years of hands-on experience and hundreds of satisfied customers, Kirby’s Expert Tree Service has built a solid reputation for quality workmanship, honest pricing, and exceptional customer care in the local community.
+          </li>
         </div>
   
         <div>
           <h3 class="font-semibold text-xl">Complete Tree & Landscape Solutions</h3>
-          <p>
-            - From tree trimming, removal, and stump grinding to emergency storm cleanup and routine landscape maintenance, we offer a full range of services to keep your outdoor spaces healthy, beautiful, and safe year-round.
-          </p>
+          <li>
+          From tree trimming, removal, and stump grinding to emergency storm cleanup and routine landscape maintenance, we offer a full range of services to keep your outdoor spaces healthy, beautiful, and safe year-round.
+          </li>
         </div>
       </div>
     </div>
   </section>
+
+  <section id="contact" class="bg-gray-50 py-16 px-8">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start md:items-center gap-12">
+      
+      <!-- Contact Info -->
+      <div class="w-full md:w-1/2 space-y-6">
+        <h2 class="text-3xl md:text-4xl font-bold">Contact Us</h2>
+        <ul class="text-lg text-gray-800 space-y-3">
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:kimkirbytree@gmail.com" class="text-blue-600 hover:underline">kimkirbytree@gmail.com</a>
+          </li>
+          <li>
+            <strong>Phone:</strong>
+            <a href="tel:+13866722493" class="text-blue-600 hover:underline">(386) 672-2493</a>
+          </li>
+          <li class="flex gap-4 flex items-center">
+            <strong>Leave Us A Review!</strong>
+            <a href="https://g.co/kgs/rJJqNnx" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline"><img src="Google-Review-Logo.png" alt="" class="w-32">
+            </a>
+          </li>
+        </ul>
+      </div>
   
+      <!-- Map -->
+      <div class="w-full md:w-1/2">
+        <iframe
+          class="w-full h-72 rounded-lg shadow-md"
+          title="Map of Flagler Beach, Florida"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55580.28004578573!2d-81.16791054404567!3d29.464798706224283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e694ccee43027d%3A0xa7329012323b3500!2sFlagler%20Beach%2C%20FL%2032136%2C%20USA!5e0!3m2!1sen!2sth!4v1748688997289!5m2!1sen!2sth"
+          frameborder="0"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
+  
+    </div>
+  </section>      
+
+<footer class="bg-green-900 text-white py-8 min-h-[20vh]">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between gap-8">
+            <div class="footer-section-1">
+                <div class="footer-logo mb-6 w-80">
+                    <a href="index.html">
+                        <img src="kirby-logo-horizontal-white.png" alt="" class="w-80">
+                    </a>
+                </div>
+            </div>
+            <div id="quick-links" class="text-white hidden xl:block mx-auto">
+                <h3 class="text-xl font-semibold mb-4 text-grey-200">Service Areas</h3>
+                <div class="flex gap-16">
+                  <ul class="space-y-2">
+                    <li><a href="" class="hover:underline">Flagler Beach</a></li>
+                    <li><a href="" class="hover:underline">Palm Coast</a></li>
+                    <li><a href="" class="hover:underline">Bunnell</a></li>
+                  </ul>
+                  <ul class="space-y-2">
+                    <li><a href="" class="hover:underline">Beverly Beach</a></li>
+                    <li><a href="" class="hover:underline">Ormond Beach</a></li>
+                    <li><a href="" class="hover:underline">Marineland</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div id="footer-contact" class="text-white mx-auto">
+                <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                <div class="flex items-start mb-4">
+                    <img src="location-white.png" alt="Location Icon" class="w-6 h-6 mr-4">
+                    <div>
+                        <p>kimkirbytree@gmail.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img src="phone-white.png" alt="Phone Icon" class="w-6 h-6 mr-4">
+                    <div>
+                        <p>(386) 672-2493</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom mt-8 border-t border-gray-400 pt-4 text-center text-sm text-gray-200">
+            <p>© Copyright 2025 Kirby's Expert Tree Service</p>
+            <p>Site produced and managed by <a href="https://spacecoastwebdev.com/"
+                    class="text-blue-400 hover:text-white">Space Coast Web Development</a></p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
